@@ -1,0 +1,45 @@
+<html>
+    <body>
+        <script>
+            //Task 1
+            alert( null || 2 || undefined ); // 2
+
+            //Task 2
+            alert( alert(1) || 2 || alert(3) ); // 1->2
+
+            //Task 3
+            alert( 1 && null && 2 ); // null
+
+            //Task 4
+            alert( alert(1) && alert(2) ); // 1->undefined
+
+            //Task 5
+            alert( null || 2 && 3 || 4 ); // 3
+
+            //Task 6
+            let age = prompt("Your age: ", 14);
+            if(age >= 14 && age <= 90) alert("Right!");
+            else alert("Wrong age");
+
+            //Task 7
+            if(!(age >= 14 && age <= 90)) alert("Wrong age");
+            if(age < 14 || age > 90) alert("Wrong age");
+
+            //Task 8
+            if (-1 || 0) alert( 'first' ); //True
+            if (-1 && 0) alert( 'second' ); //False
+            if (null || -1 && 1) alert( 'third' ); //True
+
+            //Task 9
+            let currentUserName = prompt("What's your name? ", "");
+            let password;
+            if(currentUserName === "Admin"){
+                password = prompt("Enter password: ", null);
+                if(password === "TheMaster") alert("Welcome!");
+                else if(password === "" || password === null) alert("Calnceled");
+                else alert("Wrong password");
+            }
+            else if(currentUserName === "" || currentUserName === null){
+                alert("Calnceled");
+            }
+            else alert("I don't know you");
