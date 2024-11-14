@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: Impact, fantasy;
+}
+
+p {
+    font-family: Impact, fantasy;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 10px;
+    height: 200px;
+    width: 450px;
+}
+
+#row1, #row2, #row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.row {
+    border-radius: 17px;
+    background: gray;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#row1 p, #row2 p, #row3 p {
+    position: absolute;
+    top: 5px;
+    left: 60%;
+    font-size: 18px;
+    color: black;
+}
+
+#row1 p {
+    left: 62%;
+}
+
+#row2 p {
+    left: 66%;
+}
+
+#row3 p {
+    left: 71%;
+}
